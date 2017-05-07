@@ -52,6 +52,8 @@ Try the following.  Type the full path to the below file and hit the `Enter` key
 -rwx------    1 usrmah25 0             85502 Jun 10 2016 /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
 ```
 
+Press the up arrow to retrieve the most recently run command.
+
 Now press `Ctrl` + `A` to place your cursor at the beginning of the line and replace `ls -al` with `head` and hit `Enter`.
 
 ```
