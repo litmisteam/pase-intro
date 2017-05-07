@@ -9,6 +9,10 @@ Follow on Twitter: http://twitter.com/litmisteam[@litmisteam]
 [.text-center]
 Connect via email: team@litmis.com
 
+
+# Click the arrow to the far right to start.
+
+
 == Table Of Contents
 
 link:README.adoc[Introduction]
