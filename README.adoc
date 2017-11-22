@@ -2,12 +2,11 @@
 image:/assets/pase_intro_cover.bmp[alt=""]
 
 
-[.text-center]
-On The Web: http://litmis.com[http://litmis.com]
-[.text-center]
-Follow on Twitter: http://twitter.com/litmisteam[@litmisteam]
-[.text-center]
-Connect via email: team@litmis.com
+# Sponsor
+image:/assets/LS-possible-prices.png[alt=""]
+
+http://litmis.com/[litmis.com] | https://twitter.com/litmisteam[@litmisteam] | mailto:team@litmis.com[team@litmis.com]
+
 
 
 # Click the arrow to the far right to start.
