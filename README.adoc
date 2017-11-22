@@ -1,5 +1,5 @@
 [.text-center]
-image:/assets/pase_intro_cover.bmp[alt=""]
+image:/assets/IntroToPase.png[alt=""]
 
 
 # Sponsor
