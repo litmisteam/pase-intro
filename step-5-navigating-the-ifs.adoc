@@ -163,4 +163,29 @@ You can also do wildcards in the event you want a list of files, or aren't sure 
 ```
 Notice the file name wildcard is now inside of quotes.  
 
+## Try: Locating Files with Specific Content
+
+Next try to locate a file based on its content.  To do that we use the `grep` command in combination with the `find` and `xargs` commands.
+
+```
+find . -type f | xargs grep -i "something"
+```
+
+The first parameter of `find` is where to search.  A single period declares to search in the current directory. The second parameter is the `-type` option declaring to process all files in the current and sub directories. 
+
+Next we see a vertical bar ( `|`) also known as a pipe.  This is passing (piping) the results from the `find` command to the next command, in this case `xargs`(n1).  The `xargs` is a special command the formulates the results from the previous command and preps it for the next, in this case `grep`.  
+
+The `grep` command receives in the output from `xargs` (which is a list of files to search through) and it does a case-insensitive search (`-i`) for the string "something".
+
+Give it a try in your home directory.  You results should look like the following.
+
+```
+[usr9q0d8@SPACES]~% find . -type f | xargs grep -i 'something'                  
+./file.txt:something                                                            
+./file.txt~:something
+```
+
+
+n1 - More `xargs` info https://shapeshed.com/unix-xargs/[here].
+
 ## Please proceed to the next step.
