@@ -11,6 +11,7 @@
 * link:step-8-first-shell-script.adoc[Step 8: First Shell Script]
 * link:step-9-configure-your-shell.adoc[Step 9: Configure Your Shell]
 * link:step-10-the-pase-library-list.adoc[Step 10: The PASE Library List]
+* link:step-11-configure-upon-login.adoc[Step 11: Configure upon login]
 * link:the-end.adoc[The End]
 
 
