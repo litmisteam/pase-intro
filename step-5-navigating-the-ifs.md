@@ -1,12 +1,8 @@
-When you log in you are placed in a PASE shell and also into a directory
-in the IFS. Previously we used `pwd` to print the current working
-directory. Further, you can use the `ls` (list) command to display the
-contents of a directory.
+When you log in you are placed in a PASE shell and also into a directory in the IFS. Previously we used `pwd` to print the current working directory. Further, you can use the `ls` (list) command to display the contents of a directory.
 
 ## Try: `ls` 
 
-Try the `ls` command for yourself and you should see
-something like the below.
+Try the `ls` command for yourself and you should see something like the below.
 
 ``` 
 ~% ls
@@ -27,26 +23,18 @@ Now re-run the `ls` command with the `-a` option.
 .ssh 
 .zprofile
 ``` 
-As you can see there are two hidden entries, `.ssh` is a hidden
-directory and `.zprofile` is a hidden file. You'll also notice `.` and
-`..` (a single and double period). These are for when you want to use
-relative paths in your commands.
+As you can see there are two hidden entries, `.ssh` is a hidden directory and `.zprofile` is a hidden file. You'll also notice `.` and `..` (a single and double period). These are for when you want to use relative paths in your commands.
 
-For example, if I wanted to change my current directory to that of my
-parent directory then I could issue the `cd` (change directory) command
-with two periods, as shown below.
+For example, if I wanted to change my current directory to that of my parent directory then I could issue the `cd` (change directory) command with two periods, as shown below.
 
 ``` 
 % cd .. 
 /home% 
 ```
 
-Notice how this changes the current directory in my prompt to `/home`.
-Previously I was in my home directory (i.e. `/home/USRZ8IGS`) and it
-used home directory short form of `~`.
+Notice how this changes the current directory in my prompt to `/home`. Previously I was in my home directory (i.e. `/home/USRZ8IGS`) and it used home directory short form of `~`.
 
-I can run the `ls` command again to see my home directory (i.e.
-`USRZ8IGS`) because it is a child directory of the `/home` directory.
+I can run the `ls` command again to see my home directory (i.e. `USRZ8IGS`) because it is a child directory of the `/home` directory.
 
 ``` 
 /home% ls USRZ8IGS 
@@ -71,9 +59,14 @@ Displaying the root (`/`) directory gives you perspective as to what might be in
 /QOpenSys/QIBM/ProdData/OPS Python-pkgs Python2.7 Python3.4 tools 
 ``` 
 There are many more directories you can explore. Here's a nicely formatted listing showing two levels deep of each root-level directory. 
-``` / |-- QOpenSys | |-- QIBM | |-- bin
-→ /QOpenSys/usr/bin | |-- lib → /QOpenSys/usr/lib | |-- litmis |
-|-- opt | |-- sbin → /QOpenSys/usr/sbin | 
+``` 
+|-- QOpenSys | 
+|-- QIBM | 
+|-- bin → /QOpenSys/usr/bin | 
+|-- lib → /QOpenSys/usr/lib | 
+|-- litmis |
+|-- opt | 
+|-- sbin → /QOpenSys/usr/sbin | 
 |-- usr
 |-- bin -> /QOpenSys/usr/bin
 |-- dev
