@@ -72,7 +72,7 @@ made to work in PASE on IBM i.
 Here's a visual that shows how PASE communicates with the IBM i SLIC
 kernel.
 
-```  
+```
           :-------->NODEUSER/QTMHHTTP/432346<---------:
           :                     :                     :
       |----------|---------|  | : |  |----------|---------|
