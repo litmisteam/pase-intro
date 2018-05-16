@@ -121,6 +121,6 @@ Hello Perl!
 
 **Success!**
 
-As you can see it successfully engaged the Perl interpreter to process the lines of Perl code. You might ask **\"why not just run `perl first`?**. The cool thing about adding the Shebang approach is that it *feels* like a command is being used and actually takes less key strokes to invoke.
+As you can see it successfully engaged the Perl interpreter to process the lines of Perl code. You might ask **"why not just run `perl first`?**. The cool thing about adding the Shebang approach is that it *feels* like a command is being used and actually takes less key strokes to invoke.
 
 ## Please proceed to the next step.

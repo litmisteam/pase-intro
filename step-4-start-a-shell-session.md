@@ -23,11 +23,11 @@ see it in both the command prompt (i.e. `[usrz8igs@SPACES]~%`) and by
 way of the `pwd` command.
 
 By running the `pwd` (print working directory) command we learn that
-when we log into PASE we're put into our \"home\" directory, which is
+when we log into PASE we're put into our "home" directory, which is
 `/home/USRZ8IGS` for this user. Think of this as being similar to how
 Windows Explorer works. When you open Windows Explorer, you can click on
 directories and go inside of them. The directory you are inside of is
-considered your \"working directory\".
+considered your "working directory".
 
 The Zsh shell allows us to configure what the prompt contains. In this
 case it first has an open bracket (`[`), the IBM i user profile

@@ -1,4 +1,4 @@
-PASE is sometimes referred to as \"the other side\" of IBM i. It can
+PASE is sometimes referred to as "the other side" of IBM i. It can
 seem like a vague cloud of discomfort whenever we have to venture into
 it. The only way to alleviate discomfort is to take some medicine, and
 the prescription we have to offer you is knowledge.

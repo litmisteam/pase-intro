@@ -58,16 +58,16 @@ Now press `Ctrl` + `A` to place your cursor at the beginning of the line and rep
 ``` 
 ~% 
 head /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
-.\" =========================================================================
-.\" Copyright (c) 1990-2008 Info-ZIP. All rights reserved. 
-.\" 
-.\" See the accompanying file LICENSE, version 2007-Mar-4 or later 
-.\" (the contents of which are also included in zip.h) for terms of use.
-.\" If, for some reason, all these files are missing, the Info-ZIP license 
-.\" also may be found at: <ftp://ftp.info-zip.org/pub/infozip/license.html>
-.\" ==========================================================================
-.\" 
-.\" zip.1 by Mark Adler, Jean-loup Gailly and R. P. C. Rodgers
+." =========================================================================
+." Copyright (c) 1990-2008 Info-ZIP. All rights reserved. 
+." 
+." See the accompanying file LICENSE, version 2007-Mar-4 or later 
+." (the contents of which are also included in zip.h) for terms of use.
+." If, for some reason, all these files are missing, the Info-ZIP license 
+." also may be found at: <ftp://ftp.info-zip.org/pub/infozip/license.html>
+." ==========================================================================
+." 
+." zip.1 by Mark Adler, Jean-loup Gailly and R. P. C. Rodgers
 ```
 
 As you can see it printed out the top of the using the [`head`](http://www.computerhope.com/unix/uhead.htm) command.

@@ -12,7 +12,7 @@ something like the below.
 ~% ls
 ~% 
 ``` 
-Nothing was listed because the directory is empty. Well, that's only partially true. I just so happen to know there are \"hidden\" files in this directory. Hidden files start with a period and aren't displayed by default. Most all PASE commands have options that let you expound on what you want the command to do. The PASE commands delivered with the IBM i operating system lack what are called \"man pages\", or manual pages, the documentation for the command. Because of this we instead head to Google and search for \" [ls command](http://linuxcommand.org/man_pages/ls1.html) \".
+Nothing was listed because the directory is empty. Well, that's only partially true. I just so happen to know there are "hidden" files in this directory. Hidden files start with a period and aren't displayed by default. Most all PASE commands have options that let you expound on what you want the command to do. The PASE commands delivered with the IBM i operating system lack what are called "man pages", or manual pages, the documentation for the command. Because of this we instead head to Google and search for "[ls command](http://linuxcommand.org/man_pages/ls1.html)".
 
 In the documentation we see the `-a` option, as shown below. 
 ``` 
@@ -52,12 +52,12 @@ I can run the `ls` command again to see my home directory (i.e.
 /home% ls USRZ8IGS 
 ```
 
-Change back to your \"home\" directory by issuing the following command.
+Change back to your "home" directory by issuing the following command.
 
 ``` 
 /home% cd % 
 ``` 
-Notice the command changed your prompt back to `~%` - the short form for the \"home\" directory.
+Notice the command changed your prompt back to `~%` - the short form for the "home" directory.
 
 Now try to list the contents of a directory that's further up the tree from where you're at - the root directory. The root is the single forward slash (`/`). 
 ``` 
@@ -179,7 +179,7 @@ directories.
 
 Next we see a vertical bar ( `|`) also known as a pipe. This is passing (piping) the results from the `find` command to the next command, in this case `xargs`(n1). The `xargs` is a special command the formulates the results from the previous command and preps it for the next, in this case `grep`.
 
-The `grep` command receives in the output from `xargs` (which is a list of files to search through) and it does a case-insensitive search (`-i`) for the string \"something\".
+The `grep` command receives in the output from `xargs` (which is a list of files to search through) and it does a case-insensitive search (`-i`) for the string "something".
 
 Give it a try in your home directory. You results should look like the following.
 
