@@ -1,17 +1,15 @@
-= Summary
+# Table of contents
 
-* link:README.adoc[Introduction]
-* link:step-1-what-is-pase.adoc[Step 1: What is PASE?]
-* link:step-2-the-shell.adoc[Step 2: The Shell]
-* link:step-3-setup-litmis-space.adoc[Step 3: Set up a LITMIS Space]
-* link:step-4-start-a-shell-session.adoc[Step 4: Start a Shell Session]
-* link:step-5-navigating-the-ifs.adoc[Step 5: Navigating the IFS]
-* link:step-6-command-line-tips.adoc[Step 6: Shell Command Line Tips]
-* link:step-7-the-joe-editor.adoc[Step 7: The joe Editor]
-* link:step-8-first-shell-script.adoc[Step 8: First Shell Script]
-* link:step-9-configure-your-shell.adoc[Step 9: Configure Your Shell]
-* link:step-10-the-pase-library-list.adoc[Step 10: The PASE Library List]
-* link:step-11-configure-upon-login.adoc[Step 11: Configure upon login]
-* link:the-end.adoc[The End]
-
-
+* [Introduction](README.md)
+* [Step 1: What is PASE?](step-1-what-is-pase.md)
+* [Step 2: The Shell](step-2-the-shell.md)
+* [Step 3: Set up a LITMIS Space](step-3-setup-litmis-space.md)
+* [Step 4: Start a Shell Session](step-4-start-a-shell-session.md)
+* [Step 5: Navigating the IFS](step-5-navigating-the-ifs.md)
+* [Step 6: Shell Command Line Tips](step-6-command-line-tips.md)
+* [Step 7: The joe Editor](step-7-the-joe-editor.md)
+* [Step 8: First Shell Script](step-8-first-shell-script.md)
+* [Step 9: Configure Your Shell](step-9-configure-your-shell.md)
+* [Step 10: The PASE Library List](step-10-the-pase-library-list.md)
+* [Step 11: Configure upon login](step-11-configure-upon-login.md)
+* [The End](the-end.md)
