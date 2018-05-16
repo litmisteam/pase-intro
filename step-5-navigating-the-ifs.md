@@ -60,13 +60,13 @@ Displaying the root (`/`) directory gives you perspective as to what might be in
 ``` 
 There are many more directories you can explore. Here's a nicely formatted listing showing two levels deep of each root-level directory. 
 ``` 
-|-- QOpenSys | 
-|-- QIBM | 
-|-- bin → /QOpenSys/usr/bin | 
-|-- lib → /QOpenSys/usr/lib | 
-|-- litmis |
-|-- opt | 
-|-- sbin → /QOpenSys/usr/sbin | 
+|-- QOpenSys 
+|-- QIBM 
+|-- bin → /QOpenSys/usr/bin 
+|-- lib → /QOpenSys/usr/lib 
+|-- litmis 
+|-- opt 
+|-- sbin → /QOpenSys/usr/sbin 
 |-- usr
 |-- bin -> /QOpenSys/usr/bin
 |-- dev

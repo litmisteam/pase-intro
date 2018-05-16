@@ -72,7 +72,7 @@ Now create a new script named `cheesecurds` in `/test` and set the permissions.
 At this point you should be in your home directory, but to be sure please run the below command.
 
 ``` 
-~%\ cd~ 
+~% cd~ 
 ```
 
 Now *attempt* to invoke `cheesecurds` as shown below.

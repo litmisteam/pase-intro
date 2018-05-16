@@ -56,8 +56,7 @@ Press the up arrow to retrieve the most recently run command.
 Now press `Ctrl` + `A` to place your cursor at the beginning of the line and replace `ls -al` with `head` and hit `Enter`.
 
 ``` 
-~% 
-head /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
+~% head /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1 
 ." =========================================================================
 ." Copyright (c) 1990-2008 Info-ZIP. All rights reserved. 
 ." 
@@ -83,8 +82,7 @@ There will be times where using `Up Arrow` to retrieve a previously run command 
 To try this, press `Ctrl` + `R` and type the beginning of one of the previous commands you've run. Below I've typed `ls` for the command.
 
 ```
-~% ls -al 
-/QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1
+~% ls -al /QOpenSys/QIBM/ProdData/OPS/tools/man/man1/zip.1
 bck-i-search: ls 
 ```
 

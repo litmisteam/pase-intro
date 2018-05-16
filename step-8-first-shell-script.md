@@ -103,7 +103,8 @@ Edit the `first` file and place the below contents into it. This is essentially 
 ```
 #!/QOpenSys/QIBM/ProdData/OPS/tools/bin/perl
 
-use strict; use warnings;
+use strict; 
+use warnings;
 
 print "Hello Perl!\n";
 ```
