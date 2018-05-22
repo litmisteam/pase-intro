@@ -141,7 +141,7 @@ Change directory into `/QOpenSys/myhome` and create a new file with some content
 Now display the contents of your home directory using the `~` \(tilde\) approach - you should see the newly created `file.txt` file.
 
 ```text
-/QOpenSys/myhome% ls \~ file.txt
+/QOpenSys/myhome% ls ~ file.txt
 ```
 
 Now run the below `cd` command to return to the immediate previous directory since the last time you ran `cd`.
