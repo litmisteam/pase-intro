@@ -50,7 +50,7 @@ I can run the `ls` command again to see my home directory \(i.e. `USRZ8IGS`\) be
 Change back to your "home" directory by issuing the following command.
 
 ```text
-/home% cd %
+/home% cd -
 ```
 
 Notice the command changed your prompt back to `~%` - the short form for the "home" directory.
