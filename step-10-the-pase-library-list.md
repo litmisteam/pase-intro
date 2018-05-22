@@ -1,21 +1,21 @@
-# The PASE Library List
+# Step 10: The PASE Library List
 
 OK, so PASE doesn't have a Library List in the same sense that we do with a 5250 session, but it does have something similar called a `PATH` environment variable.
 
 Use the `echo` command to display the current value of the `PATH` environment variable.
 
-```
+```text
 ~% echo $PATH
 /QOpenSys/usr/bin:/usr/ccs/bin:/QOpenSys/usr/bin/X11:/usr/sbin:.:/usr/bin:/home/USRMAH25/bin
 ```
 
-The `PATH` environment variable contains a colon (`:`) delimited list of directories that will be searched when a command is entered in the shell. This is similar to how a 5250 session works in that if you do a `CALL PGM1`, and if it isn't in a library that's in your library list then it won't find the program. The alternative is to fully qualify `PGM1` with the library it is in.
+The `PATH` environment variable contains a colon \(`:`\) delimited list of directories that will be searched when a command is entered in the shell. This is similar to how a 5250 session works in that if you do a `CALL PGM1`, and if it isn't in a library that's in your library list then it won't find the program. The alternative is to fully qualify `PGM1` with the library it is in.
 
 The same concepts apply to the PASE `PATH` environment variable in that it will search the directories listed in `PATH` and nothing else.
 
 Run the following `ls` command to list the contents of directory `/QOpenSys/usr/bin` which is the first directory listed in the `PATH` environment variable.
 
-```
+```text
 ~% ls /QOpenSys/usr/bin
 X11 dbx locale rm ar dd ls rmdir as dirname mkdir rpm awk dspmsg more scp basename dump msgattrib sed bash echo msgcat sftp bash2 env msgcmp sh bash2bug envsubst msgcomm sleep bashbug expr msgconv sort bsh find msgen ssh bunzip2 gettext msgexec ssh-add bzcat gettext.sh msgfilter ssh-agent bzcmp git msgfmt ssh-keygen bzdiff git-receive-pack msggrep ssh-keyscan bzegrep git-shell msginit system bzfgrep git-upload-archive msgmerge tail bzgrep git-upload-pack msgunfmt tar bzip2 grep msguniq termidx bzip2recover head mv test bzless info ngettext touch bzmore infokey nm tr cat jmacs pcregrep uname cd joe pcretest uniq chmod jpico printf wget chown jstar ps which clear kill pwd xargs cp ksh read xgettext csh ld recode-sr-latin zsh date ln rjoe
 ```
@@ -26,7 +26,7 @@ Run the following `ls` command, note the addition of the `-al` option so we can 
 
 **NOTE:** For the sake of brevity only a sampling of the results are displayed below.
 
-``` 
+```text
 % ls -al /QOpenSys/usr/bin 
 total 7552 
 drwx------ 3 usrmah25 0 57344 Apr 14 22:23 . 
@@ -48,7 +48,7 @@ lrwxrwxrwx 1 usrmah25 0 54 Apr 14 22:22 wget → ../../opt/freeware/bin/wget
 lrwxrwxrwx 1 usrmah25 0 52 Apr 14 22:22 zsh → ../../opt/freeware/bin/zsh
 ```
 
-When you see `l` in the first column of the results it means it is a symbolic link. Then on the far right of the results we can see the name of the symbolic link (i.e. `git`) and where it points to (i.e. `/QOpenSys/QIBM/ProdData/OPS/tools/bin/git`).
+When you see `l` in the first column of the results it means it is a symbolic link. Then on the far right of the results we can see the name of the symbolic link \(i.e. `git`\) and where it points to \(i.e. `/QOpenSys/QIBM/ProdData/OPS/tools/bin/git`\).
 
 Think of a symbolic link as being similar to a short-cut on your Windows desktop.
 
@@ -58,35 +58,35 @@ Let's try making our own symbolic links and add them to the `PATH`.
 
 First create a new directory named `/test`.
 
-```
-~% mkdir /test 
+```text
+~% mkdir /test
 ```
 
 Now create a new script named `cheesecurds` in `/test` and set the permissions.
 
-```
+```text
 ~% echo "echo  Mmmm... deep fat fried cheese at the Minnesota State Fair" > /test/cheesecurds
-~% chmod +x /test/cheesecurds 
+~% chmod +x /test/cheesecurds
 ```
 
 At this point you should be in your home directory, but to be sure please run the below command.
 
-``` 
-~% cd~ 
+```text
+~% cd~
 ```
 
-Now *attempt* to invoke `cheesecurds` as shown below.
+Now _attempt_ to invoke `cheesecurds` as shown below.
 
-```
+```text
 % cheesecurds 
-zsh: command not found: cheesecurds 
+zsh: command not found: cheesecurds
 ```
 
 It couldn't find the `cheesecurds` command. Now try fully qualifying the call.
 
-```
+```text
 ~% /test/cheesecurds 
-Mmmm... deep fat fried cheese at the Minnesota State Fair 
+Mmmm... deep fat fried cheese at the Minnesota State Fair
 ```
 
 **Success!!**
@@ -95,35 +95,35 @@ While that worked, we don't want to fully qualify the `cheesecurds` command ever
 
 First let's create a symbolic link by running the following `ln` command.
 
-```
-~% ln -s /test/cheesecurds /QOpenSys/usr/bin/cheesecurds 
+```text
+~% ln -s /test/cheesecurds /QOpenSys/usr/bin/cheesecurds
 ```
 
 Now `cheesecurds` can be invoked from anywhere, as shown below while in the home directory.
 
-```
+```text
 ~% cheesecurds 
-Mmmm... deep fat fried cheese at the Minnesota State Fair 
+Mmmm... deep fat fried cheese at the Minnesota State Fair
 ```
 
 Remove the symbolic link using the following command so we can next test the `PATH` approach.
 
 **NOTE:** Removing a symbolic link will not remove the target.
 
-```
-~% rm /QOpenSys/usr/bin/cheesecurds 
+```text
+~% rm /QOpenSys/usr/bin/cheesecurds
 ```
 
 Before going further, please make sure you get the following error when running the `cheesecurds` command.
 
-```
+```text
 ~% cheesecurds 
-zsh: command not found: cheesecurds 
+zsh: command not found: cheesecurds
 ```
 
 Now run the following command to add the `/test` directory to the `PATH` environment variable so it is included in the search for commands.
 
-```
+```text
 ~% export PATH=/test:$PATH
 ```
 
@@ -131,11 +131,12 @@ The `export` command is used to set an environment variable for not only the cur
 
 Now try running the `cheesecurds` command again.
 
-```
+```text
 ~% cheesecurds 
-Mmmm... deep fat fried cheese at the Minnesota State Fair 
+Mmmm... deep fat fried cheese at the Minnesota State Fair
 ```
 
 **Success!**
 
 ## Please proceed to the next step.
+
