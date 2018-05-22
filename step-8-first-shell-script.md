@@ -12,7 +12,7 @@ Use `joe` to create `first.sh`, as shown below.
 ~% joe first.sh
 ```
 
-Add this single line to `first.sh` and use `Ctrl` + `X` to save and exit.
+Add this single line to `first.sh` and use `Ctrl` + `KX` to save and exit.
 
 ```text
 echo 'hello'
