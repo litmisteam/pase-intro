@@ -1,5 +1,7 @@
 # Step 2: The Shell
 
+The following is commentary.  You will not be opening a 5250 session.  You will be doing some setup starting in step 3.
+
 You access PASE using what's called a _shell_. A shell is an interface to the operating system. The [PASE](http://krengel.tech/ibmkn2ecba) shell is a lot like a 5250 telnet session; it's a program that takes your commands from the keyboard and hands them to the operating system to perform their associated action. It is also known as a CLI \(**C**ommand **L**ine **I**nterface\).
 
 By default PASE uses the Korn Shell \(aka `ksh`\). One way you can enter into a PASE Korn Shell is via `CALL QP2TERM` from a 5250 Telnet session, as shown below.
